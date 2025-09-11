@@ -198,6 +198,6 @@ Individual nodes within the `nodes` property can have the following structure:
 [docs-controlled]: https://react.dev/learn/sharing-state-between-components#controlled-and-uncontrolled-components
 [docs-state-hooks]: https://react.dev/reference/react/useState
 [font-awesome]: https://fontawesome.com
-[lang-file]: https://github.com/jakezatecky/react-dual-listbox/blob/master/src/js/lang/default.js
+[lang-file]: https://github.com/jakezatecky/react-checkbox-tree/blob/master/src/js/lang/default.js
 [mdn-key]: https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/key
 [react-fontawesome]: https://github.com/FortAwesome/react-fontawesome
