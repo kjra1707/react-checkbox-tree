@@ -1,5 +1,5 @@
 import classNames from 'classnames';
-import isEqual from 'lodash.isequal';
+import { deepEqual } from 'fast-equals';
 import memoize from 'lodash.memoize';
 import PropTypes from 'prop-types';
 import React from 'react';
@@ -122,7 +122,7 @@ class CheckboxTree extends React.Component {
         model.setProps(newProps);
 
         // Since flattening nodes is an expensive task, only update when there is a node change
-        if (!isEqual(prevProps.nodes, nodes) || prevProps.disabled !== disabled) {
+        if (!deepEqual(prevProps.nodes, nodes) || prevProps.disabled !== disabled) {
             model.reset();
             model.flattenNodes(nodes);
         }
