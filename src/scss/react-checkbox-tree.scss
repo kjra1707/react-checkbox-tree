@@ -149,10 +149,6 @@ $rct-outline-offset: -2px !default;
   &:hover {
     opacity: 1;
   }
-
-  + & {
-    margin-left: 2px;
-  }
 }
 
 .rct-collapse,
