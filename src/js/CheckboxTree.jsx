@@ -5,14 +5,14 @@ import { nanoid } from 'nanoid';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import Button from './Button';
-import { CHECK_MODEL } from './constants';
-import NodeModel from './NodeModel';
-import TreeNode from './TreeNode';
-import iconsShape from './shapes/iconsShape';
-import languageShape from './shapes/languageShape';
-import listShape from './shapes/listShape';
-import nodeShape from './shapes/nodeShape';
+import Button from '#js/Button.jsx';
+import { CHECK_MODEL } from '#js/constants.js';
+import NodeModel from '#js/NodeModel.js';
+import TreeNode from '#js/TreeNode.jsx';
+import iconsShape from '#js/shapes/iconsShape.js';
+import languageShape from '#js/shapes/languageShape.js';
+import listShape from '#js/shapes/listShape.js';
+import nodeShape from '#js/shapes/nodeShape.js';
 
 class CheckboxTree extends React.Component {
     static propTypes = {

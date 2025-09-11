@@ -2,10 +2,10 @@ import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import Button from './Button';
-import NativeCheckbox from './NativeCheckbox';
-import iconsShape from './shapes/iconsShape';
-import languageShape from './shapes/languageShape';
+import Button from '#js/Button.jsx';
+import NativeCheckbox from '#js/NativeCheckbox.jsx';
+import iconsShape from '#js/shapes/iconsShape.js';
+import languageShape from '#js/shapes/languageShape.js';
 
 class TreeNode extends React.PureComponent {
     static propTypes = {

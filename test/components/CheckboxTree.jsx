@@ -4,8 +4,8 @@ import { render, screen } from '@testing-library/react';
 import { configure } from '@testing-library/dom';
 import userEvent from '@testing-library/user-event';
 
-import CheckboxTree from '../src/js/CheckboxTree';
-import CheckboxTreeError from '../src/js/CheckboxTreeError';
+import CheckboxTree from '#js/CheckboxTree.jsx';
+import CheckboxTreeError from '#js/CheckboxTreeError.js';
 
 const consoleError = console.error;
 

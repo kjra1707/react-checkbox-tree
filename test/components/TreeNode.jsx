@@ -4,7 +4,7 @@ import { fireEvent } from '@testing-library/dom';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 
-import TreeNode from '../src/js/TreeNode';
+import TreeNode from '#js/TreeNode.jsx';
 
 const baseProps = {
     checked: 0,
