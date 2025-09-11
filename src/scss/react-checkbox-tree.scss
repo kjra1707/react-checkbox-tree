@@ -1,5 +1,5 @@
-$rct-icon-font-family: "Font Awesome 6 Free", "Font Awesome 5 Free",
-  "FontAwesome", sans-serif;
+$rct-icon-font-family: // stylelint-disable-line scss/dollar-variable-colon-space-after
+  "Font Awesome 6 Free", "Font Awesome 5 Free", "FontAwesome", sans-serif;
 $rct-icon-color: #33c !default;
 $rct-label-hover: rgba($rct-icon-color, 0.1) !default;
 $rct-label-active: rgba($rct-icon-color, 0.15) !default;
