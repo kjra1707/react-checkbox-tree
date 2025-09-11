@@ -33,8 +33,8 @@ $rct-outline-offset: -2px !default;
   button,
   input {
     &:focus {
-      border-radius: $rct-outline-radius;
       outline: $rct-outline-size solid $rct-outline-color;
+      border-radius: $rct-outline-radius;
     }
 
     &:not(:focus-visible) {
@@ -92,9 +92,9 @@ $rct-outline-offset: -2px !default;
     // Show focus effect on pseudo-checkbox
     &:focus {
       + .rct-checkbox {
-        border-radius: $rct-outline-radius;
         outline: $rct-outline-size solid $rct-outline-color;
         outline-offset: $rct-outline-offset;
+        border-radius: $rct-outline-radius;
       }
 
       &:not(:focus-visible) + .rct-checkbox {
@@ -196,8 +196,8 @@ $rct-outline-offset: -2px !default;
   }
 
   &:focus {
-    background: $rct-clickable-focus;
     outline: 0;
+    background: $rct-clickable-focus;
   }
 }
 
