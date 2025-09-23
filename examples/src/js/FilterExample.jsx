@@ -57,19 +57,26 @@ class FilterExample extends Component {
     }
 
     filterNodes(filtered, node) {
-        const { filterText } = this.state;
-        const children = (node.children || []).reduce(this.filterNodes, []);
-
-        if (
+        if (this.nodeMatchesSearchString(node)) {
             // Node's label matches the search string
-            node.label.toLocaleLowerCase().indexOf(filterText.toLocaleLowerCase()) > -1 ||
-            // Or a children has a matching node
-            children.length
-        ) {
-            filtered.push({ ...node, children });
+            filtered.push(node);
+        } else {
+            // Find if any children match the search string or have descendants who do
+            const filteredChildren = (node.children || []).reduce(this.filterNodes, []);
+
+            // If so, render these children
+            if (filteredChildren.length > 0) {
+                filtered.push({ ...node, children: filteredChildren });
+            }
         }
 
         return filtered;
+    }
+
+    nodeMatchesSearchString({ label }) {
+        const { filterText } = this.state;
+
+        return label.toLocaleLowerCase().indexOf(filterText.toLocaleLowerCase()) > -1;
     }
 
     render() {

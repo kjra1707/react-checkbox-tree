@@ -28,6 +28,7 @@
 #### Other
 
 * Drop support for React before v16.8
+* Fix various issues with the filtering example improperly rendering parents and child nodes (#153, #196, #216)
 
 ### Added
 
